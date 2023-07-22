@@ -1,4 +1,6 @@
-// this file will hold all the front-end network request adapter functions
-// modifies requests under given conditions
-// gives user input about the state of communication between front-end and api
-// the goal here is not to store .get, .put, .post, etc. requests like the api requests but to modify said requests under certain conditions
+/*
+    This file will export all the necessary fetch requests made to the third
+    party API. Other modules holding the component-related fetch requests
+    will be placed into their respective modules in this folder and exported
+    to be exported from this index file and then used in their respective components.
+*/
