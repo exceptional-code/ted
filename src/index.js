@@ -1,7 +1,21 @@
-// import ReactDOM
-// import BrowserRouter
-// import App or Root or Server or whatever you want to call it
-// import the index.css file here for global css styles
+/*
+    This module will render the React vDOM.
+*/
 
-// define the root
-// root.render with browser router sandwiching the newly created app/root/server
+// import React to handle component functionality
+import React from 'react';
+// import ReactDOM to update vDOM
+import ReactDOM from 'react-dom';
+// import BrowserRouter to handle route mapping of components
+import { BrowserRouter } from 'react-router-dom';
+// import the App component to render in the root div
+import { App } from './components'
+// import the index.css file here for any global css styles
+import './style/index.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+)
