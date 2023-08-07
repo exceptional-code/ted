@@ -16,5 +16,8 @@ The purpose of this project is to hone my software development skills by creatin
 - React
 - Express
 - JavaScript
+- Web API
+- YAML
+- OAuth 2.0
 - HTML
 - CSS
