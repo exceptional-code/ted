@@ -4,8 +4,11 @@
 
 // import React to handle component functionality
 import React from 'react';
-// import ReactDOM to update vDOM
-import ReactDOM from 'react-dom';
+/*
+    import ReactDOM to update vDOM
+    has to be imported from react-dom/client instead of react-dom because of the coming concurrent version
+*/
+import ReactDOM from 'react-dom/client';
 // import BrowserRouter to handle route mapping of components
 import { BrowserRouter } from 'react-router-dom';
 // import the App component to render in the root div
