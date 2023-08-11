@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "TED is The Eighth Day project. The Bible speaks of how God, the Author of the Universe, worked for six days and on the seventh he rested. But on the eighth, already with a substantial retirement fund set aside and for reasons unbeknownst to me, he decided to work again. And so, too, then must this humble author.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "client:dev": "react-scripts start",
+    "start": "node index.js",
+    "server:dev": "nodemon index.js",
+    "start:dev": "concurrently \"npm run client:dev\" \"npm run server:dev\""
+  },
   "keywords": [],
   "author": "Bryce Adriel Malmberg",
   "license": "ISC",
@@ -20,5 +25,21 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
     "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "nodemon": "^3.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
