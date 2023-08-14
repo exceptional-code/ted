@@ -1,1 +1,41 @@
-/* define global css variables here */
+/*
+    define global css variables here, including the grid and global
+    media queries
+*/
+
+/*
+    progressive design
+        use spans
+        mobile: 4 columns, 412px break point, 16px gutters & margins
+        tablet: 6 columns, 912px break point, 32px gutters & margins
+        desktop: 12 columns, 1280px break point, 32px gutters & margins
+    layout
+        church
+            members/users
+        groups
+            group
+                group type
+                members
+                joining information
+        profile/home
+            event attendance
+            membership
+        calendar
+            date
+                event
+                time
+                location
+                notes
+*/
+
+#wrapper {
+    display: grid;
+    /* define the wrapper height to be size of view */
+    height: 100vh;
+    /* create 3 equal-sized columns for wrapper */
+    grid-template-columns: repeat(3, 1fr);
+    /* create 5 equal-sized rows for wrapper */
+    grid-template-rows: repeat(5, 1fr);
+    /* define gutter space between cells to be 16px */
+    gap: 16px;
+}

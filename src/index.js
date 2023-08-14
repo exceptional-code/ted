@@ -13,8 +13,6 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 // import the App component to render in the root div
 import { App } from './components'
-// import the index.css file here for any global css styles
-import './style/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
